@@ -28,6 +28,7 @@ label {
   height: 100px;
   background-color: var(--dark);
   border-radius: 50px;
+  cursor: pointer;
 }
 
 input {
@@ -40,6 +41,7 @@ input {
   width: 100%;
   height: 100%;
   border-radius: 50px;
+  transition: 0.3s;
 }
 
 input:checked ~ .slider {
@@ -60,7 +62,6 @@ input:checked ~ .slider {
 }
 
 input:checked ~ .slider::before {
-  transition: 0.3s;
   transform: translateX(95px);
   background-color: var(--dark);
   box-shadow: none;
